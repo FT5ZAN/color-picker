@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-image: url(download.jpeg);
+            min-height: 95vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #colorbox {
+            backdrop-filter: blur(5px);
+            width: 370px;
+            height: 370px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 46px;
+            position: relative;
+            font-family: system-ui;
+        }
+
+        #emoji {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 375px;
+            border-radius: 50%;
+        }
+
+
+
+
+        h5 {
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+            font-family: cursive;
+            margin-top: 10px;
+        }
+
+        input[type="color"] {
+            display: block;
+            margin: -25px auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid wheat;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Picker</h1>
+    <div id="colorbox">
+        <img src="Download_transparent_PNG_image_og_Gojo_Satoru_Emoji__Jujutsu_Kaisen__Anime-removebg-preview.png"
+            alt="ERROR" id="emoji">
+        <h5>Choose Your Color:</h5>
+        <input type="color" id="colorpicker">
+    </div>
+</body>
+
+<script src="script.js">
+    
+</script>
+
+</html>
